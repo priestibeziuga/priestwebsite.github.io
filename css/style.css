@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #f8fafc;
+  color: #1f2937;
+}
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #001f3f;
+  padding: 10px 20px;
+  color: white;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #001f3f;
+  padding: 20px;
+  color: white;
+}
+
+/*********** Splash Page ************************/
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color:#1f2937;
+
+}
+
+header img {
+  border-radius: 50%;
+}
+
+.address {
+  text-align: center;
+
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+
+}
+
+/************* Sections ********************/
+hr {}
+
+section h3 {
+  font-family: 'Monserrat', sans-serif;
+  color: navy;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 20px;
+}
+
+section ul {
+  list-style: square;
+}
+
+section a {
+  color: #1f4fa3;
+  text-decoration: none;
+
+}
+
+section a:hover {
+color: #e36b6b;
+}
+
+section{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0  auto;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: #001f3f ;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card img {
+  width:100%;
+  height:300px;
+  object-fit: contain;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px #cccccc;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px #aaaaaa;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  min-height: 120px;
+}
+
+textarea {}
